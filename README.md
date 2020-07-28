@@ -1,3 +1,3 @@
 Online class
 Pennx sd1x Software Development Fundamentals
-Class notes and Solutions wrote in pyhton# PennX_SD1x
+Class notes and Solutions wrote in pyhton
