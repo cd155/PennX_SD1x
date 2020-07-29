@@ -12,7 +12,8 @@ def find_prime_number(test_num):
     else:
         return False
 
-# find the output without excuting code
+# Quiz 1.1
+# Find the output without excuting code
 def quiz_one():
     n = 93
     b = 1.27
