@@ -96,11 +96,6 @@ while is_running:
         if nums_try_placing == nums_place:
             is_placing = False
 
-    print("print_grid")
-    print(whack_a_mole.print_grid())
-    print("print_grid_to_user")
-    print(whack_a_mole.print_grid_to_user())
-
     while whack_a_mole.attempts_left > 0:
         try:
             x = int(input("Enter the x: "))
