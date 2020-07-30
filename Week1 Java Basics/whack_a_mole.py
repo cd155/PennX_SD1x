@@ -106,4 +106,3 @@ while is_running:
         
         whack_a_mole.whack(x, y)
     is_running = False
-        
