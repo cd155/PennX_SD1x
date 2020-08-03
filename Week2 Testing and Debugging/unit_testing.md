@@ -27,7 +27,7 @@
 
 ### Write the stub of method
 ```python
-class BankAccount:
+class Bank_Account:
     def __init__(self, balance = None, account_owner = None):
         self.blance = balance
         self.account_owner = account_owner
