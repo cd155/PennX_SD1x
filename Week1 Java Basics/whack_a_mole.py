@@ -1,6 +1,6 @@
 from random import randrange
 
-class Whack_A_Mole:
+class WhackAMole:
     def __init__(self, nums_attempts, grid_dimension):
         self.score = 0
         self.moles_left = 0
@@ -85,7 +85,7 @@ while is_running:
         "nums_place is not an integer.")
         continue
 
-    whack_a_mole = Whack_A_Mole(nums_attempts, grid_dimension)
+    whack_a_mole = WhackAMole(nums_attempts, grid_dimension)
     is_placing = True
     nums_try_placing = 0
     while is_placing:
