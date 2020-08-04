@@ -1,6 +1,6 @@
-# Online class: Pennx sd1x Software Development Fundamentals in Python
+# Online class: Pennx sd1x Software Development Fundamentals
 ### Materials included:
-- All code wrote in pyhton
+- **All code in python**
 - Class notes wrote in md file
 - Quiz wrote in py file
 - Solutions worite in py file
