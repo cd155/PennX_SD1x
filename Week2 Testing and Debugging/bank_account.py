@@ -4,4 +4,7 @@ class BankAccount:
         self.account_owner = account_owner
 
     def deposit(self, amount):
-        self.balance = self.balance + amount
+        self.balance += amount
+    
+    def withdraw(self, amount):
+        self.balance -= amount

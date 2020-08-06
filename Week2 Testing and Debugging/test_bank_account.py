@@ -13,8 +13,12 @@ class TestBankAccountCase(unittest.TestCase):
     def test_one_deposit(self):
         self.bank_account.deposit(50)
         self.assertEqual(self.bank_account.balance, 50)
-
-    def test_two_deposit(self):
+    
+    def test_one_withdraw(self):
+        self.bank_account.withdraw(50)
+        self.assertEqual(self.bank_account.balance, -50)
+    
+    def test_two_transaction(self):
         self.bank_account.deposit(50)
         self.bank_account.deposit(-10)
         self.assertEqual(self.bank_account.balance, 40)
