@@ -134,3 +134,22 @@ for objects, uses your equals methods, if you have defined it properly, as descr
 assertEqual(x, None)
 ```
 Asserts that the object is null(undefined)
+
+# Class video 2.3B
+[Link to counter class](https://github.com/cd155/PennX_SD1x/blob/master/Week2%20Testing%20and%20Debugging/counter.py)
+
+[Link to counter class unit test sample](https://github.com/cd155/PennX_SD1x/blob/master/Week2%20Testing%20and%20Debugging/test_counter.py)
+```python
+def test_one_deposit(self):
+        self.bank_account.deposit(50)
+        self.assertEqual(self.bank_account.balance, 50)
+    
+    def test_one_withdraw(self):
+        self.bank_account.withdraw(50)
+        self.assertEqual(self.bank_account.balance, -50)
+    
+    def test_two_transaction(self):
+        self.bank_account.deposit(50)
+        self.bank_account.deposit(-10)
+        self.assertEqual(self.bank_account.balance, 40)
+```
