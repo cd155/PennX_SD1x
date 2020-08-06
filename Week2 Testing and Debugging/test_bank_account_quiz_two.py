@@ -17,7 +17,6 @@ class TestBankAccountQuizTwo(unittest.TestCase):
         self.assertEqual(self.bank_account, BankAccountQuizTwo("default"))
     
     def test_owner2(self):
-        print("double start: " + str(self.bank_account == BankAccountQuizTwo("default")))
         self.assertTrue(self.bank_account == BankAccountQuizTwo("default"))
 
     def test_owner3(self):
