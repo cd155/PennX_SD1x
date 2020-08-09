@@ -1,20 +1,18 @@
 ### Homework Assignment 2: Squarelotron
-In this assignment, we will show you the benefits of test driven development. You will produce two pieces of code: Squarelotron.java and SquarelotronTest.java.
+- In this assignment, we will show you the benefits of test driven development. You will produce two pieces of code: Squarelotron.java and SquarelotronTest.java.
 
-This assignment deals with 2-dimensional arrays or matrices. They are not all that different from the 1-dimensional arrays that you saw in the video. Just think of them as an array of arrays.
+- This assignment deals with 2-dimensional arrays or matrices. They are not all that different from the 1-dimensional arrays that you saw in the video. Just think of them as an array of arrays.
 
-2D arrays are usually displayed similar to a matrix.
+- 2D arrays are usually displayed similar to a matrix.
 
-For example to deal with the matrix below,
-
-1 2 3
-
-4 5 6
-
-7 8 9
+### For example to deal with the matrix below,
+| 1 | 2 | 3 |
+|---|---|---|
+| 4 | 5 | 6 |
+| 7 | 8 | 9 |
 
 We provide the following code to help you understand 2-dimensional arrays:
-
+```Java
 int[][] myMatrix = new int[3][3]
 
 myMatrix[0][0] = 1;
@@ -46,7 +44,7 @@ for (int i = 0 ; i < 3; i++) {
     }
 
 }
-
+```
 Squarelotron
 
 The main assignment deals with more array manipulations.
