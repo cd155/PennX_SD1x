@@ -14,35 +14,23 @@
 We provide the following code to help you understand 2-dimensional arrays:
 ```Java
 int[][] myMatrix = new int[3][3]
-
 myMatrix[0][0] = 1;
-
 myMatrix[0][1] = 2;
-
 myMatrix[0][2] = 3;
 
 //you can declare an entire row
-
 int[] secondRow = {4, 5, 6};
 
 myMatrix[1] = secondRow;
-
 myMatrix[2][0] = 7;
-
 myMatrix[2][1] = 8;
-
 myMatrix[2][2] = 9;
 
 //if you want to print out each element on a separate line
-
 for (int i = 0 ; i < 3; i++) {
-
     for (int j = 0; j < 3; j++) {
-
         System.out.println(myMatrix[i][j]);
-
     }
-
 }
 ```
 ## Squarelotron
