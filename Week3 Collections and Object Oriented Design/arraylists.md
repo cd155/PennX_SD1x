@@ -11,7 +11,7 @@
 
 ### Syntax for ArrayList
 - Remember to import java.util.*
-- ArrayList<object datatype>;
+- ArrayList< object datatype>;
 - An arraylist can only be made of objects. Primitive datatypes are not allowed.
 
 ### ArrayList of Strings
