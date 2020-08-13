@@ -1,4 +1,4 @@
-# Class video 3.4
+# Class video 3.4a
 - What does static mean?
 - Static instance variables
 - Static methods
@@ -26,3 +26,42 @@
 - For constants you also get to see the keyword **final**. Final meaning you do not get to override this value in any manner.
 - **Python neither constant nor final are existed in python**. We can create a constant class to minic constant class that similar to Java.
 - In Python, it doesn’t require a static keyword. All variables which are assigned a value in class declaration are static class variables. And variables which are assigned values inside methods are instance variables.
+
+# Class video 3.4b
+### Example: Bank Accoumt
+```python
+from customer import Customer
+
+class BankAccount:
+    # counts the number of account made. Shared across all instances
+    counter = 10000
+    def __init__(self, name, age):
+        self.balance = 0
+        self.customer = Customer(name, age)
+        BankAccount.counter += 1
+        # first account will have account number = 10,001
+        self.account_number = BankAccount.counter
+
+    def deposit(self, amount):
+        self.balance += amount
+    
+    def withdraw(self, amount):
+        self.balance -= amount
+
+a1 = BankAccount("John", 35)
+a2 = BankAccount("Ted", 16)
+```
+
+### Example: Customer
+```python
+class Customer:
+
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+```
+
+# Class video 3.5
+- Access modifiers
+- What is private, public?
+- What if we don't write any modifier?
