@@ -60,8 +60,8 @@ Finally, write a main method where:
 3. Go through the ratings of the movies in the file ratings.txt and add the ratings for the movies.
 4. Now call the methods that you created and print out the name of the best actor and the name of the highest rated movie.
 
-movies.txt
+[movies.txt](https://github.com/cd155/PennX_SD1x/blob/master/Week3%20Collections%20and%20Object%20Oriented%20Design/movies.txt)
 
-ratings.txt
+[ratings.txt](https://github.com/cd155/PennX_SD1x/blob/master/Week3%20Collections%20and%20Object%20Oriented%20Design/ratings.txt)
 
 Note that both these files are contain data that you are free to modify. The full dataset we provide you with is deliberately "real-world"-like. It may be useful to start with a smaller version of these files by copying and pasting a few lines of the .txt files into a new file. Alternatively, you could stick to our file format (comma-separated) and create your own data from scratch.
