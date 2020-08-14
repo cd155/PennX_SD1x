@@ -18,4 +18,5 @@ class BankAccount:
 
 a1 = BankAccount("John", 35)
 a2 = BankAccount("Ted", 16)
-print(a1.account_number, a2.account_number)
+print(a1.customer.get_name(), a1.account_number)
+print(a2.customer.get_name(), a2.account_number)
