@@ -1,9 +1,9 @@
 class Movie:
 
-    def __init__(self, name, rating = 0, actors=[]) -> None:
+    def __init__(self, name, rating = None):
         self.__name = name
         self.__rating = rating
-        self.__actors = actors
+        self.__actors = []
 
 
     def get_movie_name(self):
