@@ -31,7 +31,7 @@ class MovieDatabase:
             new_movie_list.append(target_moive)
             target_actor.set_movies(new_movie_list)
             
-            # add the new actor to target_moive
+            # add the new actor to target_moive pending list
             movie_actors.append(target_actor)
 
         target_moive.set_actors(movie_actors)
