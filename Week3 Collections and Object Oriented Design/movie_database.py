@@ -26,9 +26,12 @@ class MovieDatabase:
                 target_actor = Actor(actor)
                 self.__actor_list.append(target_actor)
 
+            # add the new movie to target_actor
             new_movie_list = target_actor.get_movies()
             new_movie_list.append(target_moive)
             target_actor.set_movies(new_movie_list)
+            
+            # add the new actor to target_moive
             movie_actors.append(target_actor)
 
         target_moive.set_actors(movie_actors)
