@@ -1,6 +1,6 @@
 class Car:
 
-    def __init__(self, owner_name, license_num, registration_num) -> None:
+    def __init__(self, owner_name, license_num, registration_num):
         self.__owner_name = owner_name
         self.__license_num = license_num
         self.__registration_num = registration_num
