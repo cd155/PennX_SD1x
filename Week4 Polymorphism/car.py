@@ -23,3 +23,18 @@ class Car:
     
     def set_parking_location(self, new_location):
         self.__parking_location = new_location
+
+    def __str__(self):
+        return self.__owner_name + " owned car " + self.__license_num
+    
+    def __eq__(self, other):
+        return self.__owner_name == other.get_owner_name() and \
+               self.__license_num == other.get_owner_license_num()
+
+car1 = Car("John", "Iowa1", 1)
+print(car1)
+
+car2 = Car("Ted", "Iowa2", 1)
+car3 = Car("John", "Iowa1", 1)
+print(car1 == car2)
+print(car1 == car3)
