@@ -102,3 +102,59 @@ public String toString(){
 }
 ```
 Then System.out.println(dog); will print the dog's name, which may be something like: Fido
+
+# Class video 4.3
+- Common examples of overriding
+    - toString method
+    - equals method
+
+### The Object class
+- In Java, every class inherits from the Object class
+- Think of the Object class as the most general class
+- Every class that we define is lower in the hierarchy and becomes more and more specific
+
+### toString()
+- It is almost always a good idea to override public String toString() to return something "meaningful" about the object
+- When debugging, it helps to be able to print objects
+- System.out.println(car) is the same with car.toString()
+- When you print objects with System.out.print or System.out.println, they automatically call the objects toString() method
+- When you concatenate an object with a string, the object's toString() method is automatically called.
+
+### Calling toString() explicitly
+- You can call toString() explicitly just like you would do any other method
+- Used in cases when you have to pass a string form of an object to another method.
+- Can be used in unit testing to check if two objects are the same
+- For example you have 2 Person objects. You could decide to use
+```Java
+assertEquals(person1.toString(), person2.toString())
+```
+- There are better ways to do this though.
+
+### Equality
+- Consider these two assignments:
+    - Thing thing1 = new Thing();
+    - Thing thing2 = new Thing();
+    - Are these two "Things" equal? That's up to the progarmmer.
+- But consider:
+    - Thing thing3 = new Thing();
+    - Thing thing4 = thing3;
+    - Are thest two "Things" equal? Yes, because they are the *same* Thing.
+
+### The equals method
+- Primitives can always be tested for equality with ==
+- For objects, == tests whether the two are the same object
+- Two string "abc" and "abc" may or may not be ==!
+- Objects can be tested with the method
+    - public boolean equals(Object o), **check every components**
+- Unless overridden, this method just uses ==
+- It is overridden in the class String
+- It is not overridden for arrays; == tests if its operands are the same array
+#### Morals:
+- Never use == to test equality of Strings or arrays or other objects
+- Use equals for Strings, java.util.Arrays.equals(a1, a2) for arrays
+- If you test your own objects for equality, override equals
+
+### The equals method in unit testing
+- assertEquals in a Junit test uses the overriden(hopefully) method of the objects being compared.
+- assertArrayEquals - When used on a array of objects the equals method is used for every index
+- Consider array1 and array2 as arrays of Object array1[i].equals(array2[i]) needs to be true for every index i
