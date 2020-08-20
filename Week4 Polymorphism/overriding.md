@@ -158,3 +158,109 @@ assertEquals(person1.toString(), person2.toString())
 - assertEquals in a Junit test uses the overriden(hopefully) method of the objects being compared.
 - assertArrayEquals - When used on a array of objects the equals method is used for every index
 - Consider array1 and array2 as arrays of Object array1[i].equals(array2[i]) needs to be true for every index i
+
+# Quiz 4.2
+### Quiz 1
+```Java
+class OverridingExample{
+    private int id;
+    private String name;
+    OverridingExample(int id, String name){
+        this.id = id;
+        this.name = name;
+    }
+    public boolean equals(Object o){
+        OverridingExmaple example = (OverridingExample) o;
+        return id == example.id && name.equals(example.name);
+    }
+    public String toString(){
+        return "ID: " + id + "; Name: " + name;
+    }
+    public boolean equal(OverridingExample example){
+        return id == example.id && name == example.name;
+    }
+    public String tostring(){
+        return "Name: " + name;
+    }
+    public static void main(String[] args){
+        OverridingExample e1 = new OverridingExample(0, "oops");
+        OverridingExample e2 = e1;
+        System.out.println(e1 == e2);
+        OverridingExample e3 = new OverridingExample(0, "oops");
+        String s1 = "bla";
+        String s2 = "bl";
+        s2 = s2 + "a";
+        System.out.println(s1.equals(s2));
+        System.out.println(s1 == s2);
+        String s3 = "bla"
+        System.out.println(s1 == s3);
+        System.out.println(e1);
+        System.out.println(e1.tostring());
+        OverridingExample e4 = new OverridingExample(1, s1);
+        OverridingExample e5 = new OverridingExample(1, s3);
+        System.out.println(e4.equal(e5));
+        assertEquals(e1, e3);
+        System.out.println("look: " + e1);
+    } // end of main method
+} // end of class
+```
+
+### Quiz 2
+```Java
+class Animal{
+    private String name;
+    private int power;
+    Animal(){
+        this.name = "DEFAULT_NAME";
+        this.power = 10;
+    }
+    Animal(String name, int power){
+        this.name = name;
+        this.power = power;
+    }
+    Animal(String name){
+        this();
+        this.name = name;
+    }
+    Animal(int power){
+        this();
+        this.power = power;
+    }
+    void speak(){
+        System.out.println("This is " + name + ", my power is " + power);
+    }
+}
+
+public class Lion extends Animal{
+    Lion(){
+    }
+    Lion(String name){
+    }
+    Lion(int power){
+        super(power);
+    }
+    Lion(String name, int power){
+        super(name, power);
+    }
+    @Override
+    void speak(){
+        System.out.print("Here comes the king!!!");
+        super.speak();
+    }
+}
+
+public class TestAnimal{
+    public static void main(String[] args){
+        Animal animal = new Animal(3);
+        animal.speak();
+        Lion lion1 = new Lion();
+        lion1.speak();
+        Lion lion2 = new Lion("Garfield");
+        lion2.speak();
+        Lion lion3 = new Lion(99);
+        lion3.speak();
+        Lion lion4 = new Lion("Simba", 100);
+        lion4.speak();
+    }
+}
+```
