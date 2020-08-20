@@ -15,7 +15,7 @@
         - [Class note](https://github.com/cd155/PennX_SD1x/blob/master/Week1%20Java%20Basics/data_collections.md)
         - [Quizs 1.3](https://github.com/cd155/PennX_SD1x/blob/master/Week1%20Java%20Basics/data_collections.py)
     - Homework Assignment 1: WhackAMole
-        - [Problem]((https://github.com/cd155/PennX_SD1x/blob/master/Week1%20Java%20Basics/whackamole.md))
+        - [Problem](https://github.com/cd155/PennX_SD1x/blob/master/Week1%20Java%20Basics/whackamole.md)
         - [Solution](https://github.com/cd155/PennX_SD1x/blob/master/Week1%20Java%20Basics/whack_a_mole.py)
 
 2. Week 2 Test and Debugging
