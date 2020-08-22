@@ -91,3 +91,123 @@ class Crescent extends Shape{
     - This is legal, because every actual instance must have a draw() method
 
 # Class video 4.5 
+- Interfaces
+
+### What is an Interface?
+- "An interface is a group of related methods with empty bodies" - from the offical Java documentation
+- Most common way of specifying that a class follows a certain design
+
+### The implements keyword
+- Like signing a contract
+- Agreeing to write certain methods
+
+### Interfaces
+- An interface declares(describes) methods but does not supply bodies from them
+```Java
+interface KeyListener{
+    public void keyPressed(KeyEvent e);
+    public void keyReleased(KeyEvent e);
+    public void keyTyped(KeyEvent e);
+}
+```
+- All the methods are implicitly public and abstract
+    - You can add these qualifiers if you like, but why bother?
+- You cannot instantiate an interface
+    - An interface is like a very abstract class - none of its methods are defined
+- An interface may also contain constants(final variables)
+
+### When to write an interface
+- You will frequently use the supplied Java interfaces
+- Sometimes you will want to design your own
+- You would write an interface if you want classes of various types to all have a certain set of capabilities
+- For example, if you want to be able to create grocery items, you might define an interface as
+```Java
+public interface Item{
+    salePrice();
+}
+```
+
+### implements != extends
+- You extend a class, but you implement an interface
+- A class an only extend(subclass) one other class, but it can implement as many interfaces as you like
+```Java
+class MyListener implements Keylistener, ActionListener{...}
+```
+### implements == signing a binding contract
+- When you say a class implements an interface, you are promising to define all the methods that were declared in the interface
+### Example
+```Java
+class MyKeyListener implements KeyListener{
+    public void keyPressed(KeyEvent e){...};
+    public void keyReleased(KeyEvent e){...};
+    public void keyTyped(KeyEvent e){...};
+}
+```
+- The "..." indicates actual code that you must supply
+- Now you can create a new MyKeyListener
+
+### Do we have to write all the methods?
+- It is possible for a class to define some but not all of the methods defined in an interface:
+```Java
+abstract  class MyKeyListener implements KeyListenner{
+    public void keyTyped(KeyEvent e){...};
+}
+```
+- Since this class does not supply all the methods it has promised, it must be an abstract class
+- You must label it as such with keyword abstract
+- You can even extend an interface(to add method):
+```Java
+interface FunkyKeyListener extends KeyListener{....}
+```
+
+### Why interfaces?
+- Reason 1: A class can only extend one other class, but it cam implement multiple interfaces
+    - This lets the class fill multiple "roles"
+    - In writing user interfaces it is common to have a class be able to handle different user interactions.
+    - Example:
+    ```Java
+    class MyApplet extends Applet
+        implements ActionListener, KeyListener{...}
+    ```
+- Reason 2: You can write methods that work for more than one kind of class
+
+### Methods for more than one class
+- You can write methods work with more than one class
+```Java
+interface RuleSet{
+    boolean isLegal(Move m, Board b);
+    void makeMove(Move m);
+}
+```
+```Java
+class CheckersRules implements RuleSet{
+    public boolean isLegal(Move m, Board b){...}
+    public void makeMove(Move m){...}
+}
+class ChessRules implements RuleSet{...} // another implementation
+
+RuleSet rulesOfThisGame = new Chessrules();
+if(ruleOfThisGame.isLegal(m, b)){
+    rulesOfThisGame.makeMove(m);
+}
+```
+- This statement is legal becasue whatever kind of RuleSet object rulesOfThisGame is, it must have isLegal and makeMove methods
+
+### instanceof
+- instanceof is a keyword that tells you whether a variable "is a" member of class or interface
+- For example, if
+```Java
+class Dog extends Animal implements Pet{...}
+Animal fido = new Dog();
+```
+then the following are all true:
+```Java
+fido instanceof Dog
+fido instanceof Animal
+fido instanceof Pet
+```
+- instanceof is seldom used
+    - When you find yourself wanting to use instanceof, think about whether the method you are writing should be moved to the individual subclasses
+
+### In Summary
+- Developers write interface more often than abstract class
