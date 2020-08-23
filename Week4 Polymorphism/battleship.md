@@ -78,8 +78,7 @@ Since these instance variables will be private, please include getters and sette
 ### is_sunk()
 - Return true if every part of the ship has been hit, false otherwise.
 
-### @Override
-### public String toString()
+### Override public String toString()
 - Returns a single-character String to use in the Ocean’s print method (see below).
 
 - This method should return ”x” if the ship has been sunk, ”S” if it has not been sunk. This method can be used to print out locations in the ocean that have been shot at; it should not be used to print locations that have not been shot at.
@@ -102,8 +101,7 @@ Each of these classes has a constructor, the purpose of which is to set the inhe
 
 Aside from the constructor you have to override this method
 
-### @Override
-### get_ship_type()
+### Override get_ship_type()
 - Returns one of the strings “battleship”, “battlecruiser”, “cruiser”, “light cruiser”,  “destroyer” or “submarine” as appropriate 
 
 Aside from this you really do not have to write more code in any of these classes. Most of the heavy lifting has been done for you because of the abstract class design.      
@@ -115,21 +113,17 @@ You may wonder why ”EmptySea” is a type of Ship. The answer is that the Ocea
 ### EmptySea() 
 - This constructor sets the inherited length variable to 1.
 
-### @Override
-### shoot_at(int row, int column)
+### Override shoot_at(int row, int column)
 - This method overrides shootAt(int row, int column) that is inherited from Ship, and always returns false to indicate that nothing was hit.
 
-### @Override 
-### is_sunk()
+### Override is_sunk()
 - This method overrides isSunk() that is inherited from Ship, and always returns false to indicate that you didn’t sink anything.
 
-### @Override
-### public String toString()
+### Override public String toString()
 - Returns a single-character String to use in the Ocean’s print method.
 Since this is the emptysea, you could choose to have an unoccupied sea in many ways
 
-### @Override
-### get_ship_type()
+### Override get_ship_type()
 - This method just returns the string ”empty”
 
 # class Ocean 
