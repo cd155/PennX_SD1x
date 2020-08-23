@@ -105,8 +105,8 @@ Then System.out.println(dog); will print the dog's name, which may be something 
 
 # Class video 4.3
 - Common examples of overriding
-    - toString method
-    - equals method
+    - [toString method](https://github.com/cd155/PennX_SD1x/blob/master/Week4%20Polymorphism/car.py)
+    - [equals method](https://github.com/cd155/PennX_SD1x/blob/master/Week4%20Polymorphism/car.py)
 
 ### The Object class
 - In Java, every class inherits from the Object class
