@@ -21,7 +21,7 @@
 
 2. Week 2 Test and Debugging
     - Unit Testing
-        - [Class note and Quizs](https://github.com/cd155/PennX_SD1x/blob/master/Week2%20Testing%20and%20Debugging/unit_testing.md)
+        - [Class note and Quiz 2.1, 2.2, 2.3](https://github.com/cd155/PennX_SD1x/blob/master/Week2%20Testing%20and%20Debugging/unit_testing.md)
         - Quiz solutions
             - [BankAccount](https://github.com/cd155/PennX_SD1x/blob/master/Week2%20Testing%20and%20Debugging/bank_account.py)
             - [BankAccountTest](https://github.com/cd155/PennX_SD1x/blob/master/Week2%20Testing%20and%20Debugging/bank_account_quiz_two.py)
@@ -41,12 +41,12 @@
             - [Unit Test](https://github.com/cd155/PennX_SD1x/blob/master/Week2%20Testing%20and%20Debugging/test_squarelotron.py)
 3. Week 3 Collections and Object Oriented Design
     - Variable length arrays - ArrayLists
-        - [Class note](https://github.com/cd155/PennX_SD1x/blob/master/Week3%20Collections%20and%20Object%20Oriented%20Design/arraylists.md)
+        - [Class note and Quiz 3.1](https://github.com/cd155/PennX_SD1x/blob/master/Week3%20Collections%20and%20Object%20Oriented%20Design/arraylists.md)
         - [Card Deck Example](https://github.com/cd155/PennX_SD1x/blob/master/Week3%20Collections%20and%20Object%20Oriented%20Design/card.py)
     - Documenting your code
         - [Class note](https://github.com/cd155/PennX_SD1x/blob/master/Week3%20Collections%20and%20Object%20Oriented%20Design/documentation.md)
     - Access modifiers
-        - [Class note](https://github.com/cd155/PennX_SD1x/blob/master/Week3%20Collections%20and%20Object%20Oriented%20Design/access_modifiers.md)
+        - [Class note and Quiz 3.2](https://github.com/cd155/PennX_SD1x/blob/master/Week3%20Collections%20and%20Object%20Oriented%20Design/access_modifiers.md)
         - [Bank Account Example](https://github.com/cd155/PennX_SD1x/blob/master/Week3%20Collections%20and%20Object%20Oriented%20Design/bank_account.py)
         - [Customer Example](https://github.com/cd155/PennX_SD1x/blob/master/Week3%20Collections%20and%20Object%20Oriented%20Design/customer.py)
     - Working with multiple classes
@@ -64,7 +64,7 @@
         - [toString/str Example](https://github.com/cd155/PennX_SD1x/blob/master/Week4%20Polymorphism/car.py)
         - [equals Example](https://github.com/cd155/PennX_SD1x/blob/master/Week4%20Polymorphism/car.py)
     - Overriding
-        - [Class note](https://github.com/cd155/PennX_SD1x/blob/master/Week4%20Polymorphism/overriding.md)
+        - [Class note and Quiz 4.2](https://github.com/cd155/PennX_SD1x/blob/master/Week4%20Polymorphism/overriding.md)
     - Abstract classes and interfaces
         - [Class note](https://github.com/cd155/PennX_SD1x/blob/master/Week4%20Polymorphism/abstract_classes_and_interfaces.md)
     - Homework Assignment 4: Battleship
