@@ -22,7 +22,7 @@
 2. Week 2 Test and Debugging
     - Unit Testing
         - [Class note and Quiz 2.1, 2.2, 2.3](https://github.com/cd155/PennX_SD1x/blob/master/Week2%20Testing%20and%20Debugging/unit_testing.md)
-        - Quiz solutions
+        - Quiz 2.2 solutions
             - [BankAccount](https://github.com/cd155/PennX_SD1x/blob/master/Week2%20Testing%20and%20Debugging/bank_account.py)
             - [BankAccountTest](https://github.com/cd155/PennX_SD1x/blob/master/Week2%20Testing%20and%20Debugging/bank_account_quiz_two.py)
         - Example
