@@ -19,7 +19,7 @@ class Squarelotron:
         # copy a matrix to edit
         matrix = self.squarelotron.copy()
 
-        # set bound
+        # set boundary
         top_bound = 0
         bottom_bound = self.size
         out_number_of_rings = ring -1
@@ -31,10 +31,12 @@ class Squarelotron:
         for i in range(top_bound, int(half_row)):
             for j in range(top_bound, bottom_bound):
                 if i == top_bound:
+                    # Move all the elements from the irst row to half bottom
                     temp = matrix[i][j]
                     matrix[i][j] = matrix[self.size - 1 - i][j]
                     matrix[self.size - 1 - i][j] = temp
                 else:
+                    # Move elements in the ring's left or right bound to half bottom
                     if j == top_bound or j == bottom_bound - 1:
                         temp = matrix[i][j]
                         matrix[i][j] = matrix[self.size - 1 - i][j]
@@ -59,12 +61,14 @@ class Squarelotron:
             bottom_bound = self.size - out_number_of_rings
 
         for i in range(top_bound, bottom_bound):
+            # Move all the elements from the last row to diagonal postion
             if i == bottom_bound -1:
                 for j in range(top_bound, bottom_bound):
                     temp = matrix[i][j]
                     matrix[i][j] = matrix[j][i]
                     matrix[j][i] = temp
             else:
+                # Move all the elements from the first column to diagonal postion
                 temp = matrix[i][out_number_of_rings]
                 matrix[i][out_number_of_rings] = matrix[out_number_of_rings][i]
                 matrix[out_number_of_rings][i] = temp

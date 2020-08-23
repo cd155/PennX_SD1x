@@ -14,13 +14,15 @@ class MovieDatabase:
         return self.__actor_list
     
     def add_movie(self, movie_name, actors):
+        # find whether movie name exist in movie list
         target_moive = next((x for x in self.__movie_list if x.get_movie_name() == movie_name), None)
         if target_moive is None:
             target_moive = Movie(movie_name)
             self.__movie_list.append(target_moive)
-
+        
         movie_actors = target_moive.get_actors()
         for actor in actors:
+            # find whether actor name exist in actor list
             target_actor = next((x for x in self.__actor_list if x.get_actor_name() == actor), None)
             if target_actor is None:
                 target_actor = Actor(actor)
