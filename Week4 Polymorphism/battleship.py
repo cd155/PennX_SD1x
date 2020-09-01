@@ -1,5 +1,9 @@
 from ship import Ship
 
 class Battleship(Ship):
-    size = 8
-    pass
+
+    def __init__(self):
+        self.length = 8
+
+    def get_ship_type():
+        return "Battleship"
