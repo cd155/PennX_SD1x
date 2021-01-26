@@ -12,7 +12,7 @@ The human player does not know where the ships are. The initial display of the o
 
 The human player tries to hit the ships, by calling out a row and column number. The computer responds with one bit of information saying ”hit” or ”miss.” When a ship is hit but not sunk, the program does not provide any information about what kind of a ship was hit. However, when a ship is hit and sinks, the program prints out a message ”You just sank a ship-type.” After each shot, the computer redisplays the ocean with the new information.
 
-A ship is ”sunk” when every square of the ship has been hit. Thus, it takes 8 hits to sink a battleship but only 6 to sink a cruiser. The objective is to sink the fleet with as few shots as possible.
+**A ship is ”sunk” when every square of the ship has been hit.** Thus, it takes 8 hits to sink a battleship but only 6 to sink a cruiser. The objective is to sink the fleet with as few shots as possible.
 
 When all ships have been sunk, the program prints out a message that the game is over, and tells the user how many shots were required.
 
@@ -137,7 +137,7 @@ Since this is the emptysea, you could choose to have an unoccupied sea in many w
 
 - int shipsSunk – The number of ships sunk. Remember that you have a total of 13 ships.       
 
-# Methods 
+## Methods 
 ### Ocean()
 - The constructor. Creates an ”empty” ocean (fills the ships array with a bunch of EmptySea instances). Also initializes any game variables, such as how many shots have been fired.
 
